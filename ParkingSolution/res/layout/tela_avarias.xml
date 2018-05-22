@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:orientation="horizontal" >
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="182dp"
+        android:layout_height="304dp"
+        android:layout_below="@+id/chkFrente"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/carro" />
+
+    <Button
+        android:id="@+id/btn01TelaAvariasSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="btn01TelaAvariasSalvar"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/chkDireitaFundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/chkDireitaMeio"
+        android:layout_marginBottom="17dp" />
+
+    <CheckBox
+        android:id="@+id/chkDireitaMeio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chkDireitaFundo"
+        android:layout_alignLeft="@+id/chkDireitaFrente"
+        android:layout_marginBottom="81dp" />
+
+    <CheckBox
+        android:id="@+id/chkEsquerdaMeio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkDireitaMeio"
+        android:layout_alignBottom="@+id/chkDireitaMeio"
+        android:layout_alignLeft="@+id/chkEsquerdaFrente" />
+
+    <CheckBox
+        android:id="@+id/chkEsquerdaFundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkDireitaFundo"
+        android:layout_alignBottom="@+id/chkDireitaFundo"
+        android:layout_alignLeft="@+id/chkEsquerdaMeio" />
+
+    <CheckBox
+        android:id="@+id/chkFrente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkFundo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/chkFundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/chkEsquerdaFrente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkDireitaFrente"
+        android:layout_alignBottom="@+id/chkDireitaFrente"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="54dp" />
+
+    <CheckBox
+        android:id="@+id/chkDireitaFrente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>

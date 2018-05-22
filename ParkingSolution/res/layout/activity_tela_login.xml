@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.parkingsolutionnew.TelaLogin" >
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="4" />
+
+    <Button
+        android:id="@+id/btn01TelaLoginEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt02TelaLoginSenha"
+        android:layout_alignRight="@+id/edt02TelaLoginSenha"
+        android:layout_below="@+id/edt02TelaLoginSenha"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="MontarTelaMenuClick"
+        android:text="Entrar"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/edt01TelaLoginLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:text="Rbastos" />
+
+    <EditText
+        android:id="@+id/edt02TelaLoginSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt01TelaLoginLogin"
+        android:layout_below="@+id/edt01TelaLoginLogin"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="12345" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/parkingsol" />
+
+</RelativeLayout>

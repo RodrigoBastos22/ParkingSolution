@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn01TelaPagamentoConfirmar"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_x="72dp"
+        android:layout_y="367dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Confirmar"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="25dp"
+        android:text="Valor a pagar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="27dp"
+        android:layout_y="199dp" >
+
+        <RadioButton
+            android:id="@+id/rdb01TelaPagamentoDinheiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Dinheiro" />
+
+        <RadioButton
+            android:id="@+id/rdb02TelaPagamentoCredito"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:text="Crédito" />
+
+        <RadioButton
+            android:id="@+id/rdb03TelaPagamentoDebito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débito" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt01TelaPagamentoValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="129dp"
+        android:layout_y="74dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+</AbsoluteLayout>

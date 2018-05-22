@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.parkingsolution"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TelaLogin"
+            android:label="Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".menu"
+            android:label="Menu"> </activity>
+        <activity 
+            android:name=".avarias"
+            android:label="Consultar Avarias"> </activity>
+        <activity 
+            android:name=".registrar"
+            android:label="Registrar Entrada/Saída"> </activity>
+        <activity 
+            android:name=".registrar_avarias"
+            android:label="Registrar Avarias"></activity>
+        <activity
+            android:name=".avarias_select"
+            android:label="Avarias"></activity>
+        <activity 
+            android:name=".ticket"
+            android:label="Ticket"></activity>
+        <activity 
+            android:name=".tela_pagamento"
+            android:label="Pagamento"></activity>
+    </application>
+
+</manifest>
